@@ -41,165 +41,59 @@ body {
 <img src="image/fbe02 logo.png" width="140" height ="140">
 
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#funko gallery">Funko Gallery</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+  <a class="Home Page.html" href="Home Page.html">Home</a>
+  <a href="Funko News.html">Funko Gallery</a>
+  <a href="About Us.html">About</a>
+  <a href="Contact Us.html">Contact</a>     
   
   link rel= stylesheet type= text/css href= artwork.css 
 </div>
 </br>
 
- <h1 align="Center"> <em> <strong>  Funko Gallery </em></strong></h1>>
+ <h1 align="Center"> <em> <strong>  Funko Gallery </em></strong></h1>
 
- <style>
-  div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  </style>
-  </head>
-  <body>
-  
-  <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-
-
-<style>
-
-img  {
-
-width: 100px;
-height: 90px;
-     
-
-}
-
-
-th
-{
-
-   font-size:2em;
-   background-color: #f9ddff;
-
-}
-
-body
-
-{
-
- font-family: sans-serif;
- font-size: lem;
- text-align; center;
-}
-
-table
-{
-  backgrond-color: white;
-width: 60%;
-}
-
-td
-{  
-   padding: 25px;
-
-}
-
-
-
-</head>
-
-
-<table align= "center">
-<tr>
-             <th> photo Gallery</th>
-  
-<tr>
-
-<tr>
-        <td> Click on he thumbnails below to make the image larger.</td>     
-
-</tr>
-
-
-<tr>
-
-           <td> <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-           
-           <img <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-           
-           <img <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-           
-           <img <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-
-</tr>
-
-
-
-
-
-<tr>
-
-          <td> <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-           
-           <img <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-           
-           <img <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-           
-           <img <a href="Images/1.jpg" target="_blank">< img src="Image/1.jpg>"</a> </td>
-</tr>
-
-
-
-
-</table>
-
-
-
+ <body>
 </style>
+
+<script language=javascript>
+var lastID = 0;
+function SelectImg(id) {
+if (lastID > 0) {
+document.getElementById(lastID).className = "thumbnail";
+}
+document.getElementById(id).className = "thumbSelected";
+document.getElementById(0).src = document.getElementById(id).src;
+lastID = id;
+}
+function LoadTrigger() {
+SelectImg(1);
+}
+window.onload = LoadTrigger;
+</script>
+
 </head>
+
 <body>
-
-
-
+<center>
+  <H1>"Funko Pop Famous Icon Execlusive"</H1>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top">
+<img id=1 class="thumbnail" src= "image/Cap'n Crunch.jpg" width=140 onclick="SelectImg(1)"> <img id=2 class="thumbnail" src="image/Dig.jpg" width=140 onclick="SelectImg(2)"> <img id=3 class="thumbnail" src="image/Bullseye.jpg" width=140 onclick="SelectImg(3)"> <img id=4 class="thumbnail" src="image/Tucan Sam.jpg" width=140 onclick="SelectImg(4)"><br> 
+<img id=5 class="thumbnail" src="image/Pillsbury Doughboy (Shamrock  Cookie).jpg" width=140 onclick="SelectImg(5)"> <img id=6 class="thumbnail" src="image/Lucky the Leprechaun.jpg" width=140 onclick="SelectImg(6)"><img id=7 class="thumbnail" src="image/Tony the Tiger.jpg" width=140 onclick="SelectImg(7)"> <img id=8 class="thumbnail" src="image/Buzz the Bee.png" width=140 onclick="SelectImg(8)"><br> 
+<img id=9 class="thumbnail" src="image/Trix Rabitt.png" width=140 onclick="SelectImg(9)"><img id=10 class="thumbnail" src="image/Sonny the  Cuckoo.jpg" width=140 onclick="SelectImg(10)"> <img id=11 class="thumbnail" src="image/Boo Berry.jpg" width=140 onclick="SelectImg(11)"> <img id=12 class="thumbnail" src="image/Count Chocula.jpg" width=140 onclick="SelectImg(12)"><br>
+<img id=13 class="thumbnail" src="image/Franken Berry.jpg" width=140 onclick="SelectImg(13)"> <img id=14 class="thumbnail" src="image/Twinkie the Kid.jpg" width=140 onclick="SelectImg(14)"><img id=15 class="thumbnail" src="image/King Ding Dong.jpg" width=140 onclick="SelectImg(15)"> <img id=16 class="thumbnail" src="image/Fruit Pie the Magician.jpg" width=140 onclick="SelectImg(16)"><br> 
+<img id=17 class="thumbnail" src="image/Sugar Bear.png" width=140 onclick="SelectImg(17)"><img id=18 class="thumbnail" src="image/Colonel Sanders.jpg" width=140 onclick="SelectImg(18)"> <img id=19 class="thumbnail" src="image/Yummy Mummy.jpg" width=140 onclick="SelectImg(19)"> <img id=20 class="thumbnail" src="image/The Noid.jpg" width=140 onclick="SelectImg(20)"><br>
+<img id=21 class="thumbnail" src="image/Bazooka Joe.jpg" width=140 onclick="SelectImg(21)"> <img id=22 class="thumbnail" src="image/Jollibee.png" width=140 onclick="SelectImg(22)"><img id=23 class="thumbnail" src="image/Snap! Crackle! Pop!.jpg" width=140 onclick="SelectImg(23)"> <img id=24 class="thumbnail" src="image/Geoffrey.jpg" width=140 onclick="SelectImg(24)"><br> 
+<img id=25 class="thumbnail" src="image/Pillsbury Doughboy (Shamrock  Cookie).jpg" width=140 onclick="SelectImg(25)"><img id=26 class="thumbnail" src="image/Fruit Brute.jpg" width=140 onclick="SelectImg(26)"> <img id=27 class="thumbnail" src="image/Jean LaFoote.jpg" width=140 onclick="SelectImg(27)"> <img id=28 class="thumbnail" src="image/Big Boy.jpg" width=140 onclick="SelectImg(28)"><br>
+</td>
+<td width="10">
+</td>
+<td align="center" valign="top">
+<img id=0 src="">
+</td>
+</tr>
+</table>
+</center>
 </body>
-</html>
-
-  
-  
+</html><br>
