@@ -38,174 +38,62 @@ body {
 </style>
 </head>
 <body>
-<img src="image/fbe logo.png" width="140" height ="140">
+<img src="image/fbe02 logo.png" width="140" height ="140">
 
 <div class="topnav">
-  <a class="active" href="home">Home</a>
-  <a href="funko news">Funko News</a>
-  <a href="about">About</a>
-  <a href="#contact">Contact</a>
+  <a class="Home Page.html" href="Home Page.html">Home</a>
+  <a href="Funko News.html">Funko Gallery</a>
+  <a href="About Us.html">About</a>
+  <a href="Contact Us.html">Contact</a>     
   
   link rel= stylesheet type= text/css href= artwork.css 
 </div>
 </br>
 
+ <h1 align="Center"> <em> <strong>  Funko Gallery </em></strong></h1>
 
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the container/contact section */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  
-  /* Create two columns that float next to eachother */
-  .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-  </style>
-  </head>
-  <body>
-  
-      <style>
-          body {
-            font-family: Arial, Helvetica, sans-serif;
-          }
-          
-          * {
-            box-sizing: border-box;
-          }
-          
-          /* Style inputs */
-          input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-          }
-          
-          input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            cursor: pointer;
-          }
-          
-          input[type=submit]:hover {
-            background-color: #45a049;
-          }
-          
-          /* Style the container/contact section */
-          .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 10px;
-          }
-          
-          /* Create two columns that float next to eachother */
-          .column {
-            float: left;
-            width: 50%;
-            margin-top: 6px;
-            padding: 20px;
-          }
-          
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-          
-          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 600px) {
-            .column, input[type=submit] {
-              width: 100%;
-              margin-top: 0;
-            }
-          }
-          </style>
-          </head>
-          <body>
-          
-          <h2>Responsive Contact Section</h2>
-          <p>Resize the browser window to see the effect....</p>
-          
-          <div class="container">
-            <div style="text-align:center">
-              <h1><em><strong>Contact Us </strong></em></h1>
-              
-            </div>
-            <div class="row">
-              <div class="column">
-                <img src="image/Funko C1.jpg" width="920" height ="470">
-              </div>
-              <div class="column">
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="country">Country</label>
-                  
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
-            </div>
-          </div>
-          
-          </body>
-          </html>
+ <body>
+</style>
+
+<script language=javascript>
+var lastID = 0;
+function SelectImg(id) {
+if (lastID > 0) {
+document.getElementById(lastID).className = "thumbnail";
+}
+document.getElementById(id).className = "thumbSelected";
+document.getElementById(0).src = document.getElementById(id).src;
+lastID = id;
+}
+function LoadTrigger() {
+SelectImg(1);
+}
+window.onload = LoadTrigger;
+</script>
+
+</head>
+
+<body>
+<center>
+  <H1>"Funko Pop Famous Icon Execlusive"</H1>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top">
+<img id=1 class="thumbnail" src= "image/Cap'n Crunch.jpg" width=140 onclick="SelectImg(1)"> <img id=2 class="thumbnail" src="image/Dig.jpg" width=140 onclick="SelectImg(2)"> <img id=3 class="thumbnail" src="image/Bullseye.jpg" width=140 onclick="SelectImg(3)"> <img id=4 class="thumbnail" src="image/Tucan Sam.jpg" width=140 onclick="SelectImg(4)"><br> 
+<img id=5 class="thumbnail" src="image/Pillsbury Doughboy (Shamrock  Cookie).jpg" width=140 onclick="SelectImg(5)"> <img id=6 class="thumbnail" src="image/Lucky the Leprechaun.jpg" width=140 onclick="SelectImg(6)"><img id=7 class="thumbnail" src="image/Tony the Tiger.jpg" width=140 onclick="SelectImg(7)"> <img id=8 class="thumbnail" src="image/Buzz the Bee.png" width=140 onclick="SelectImg(8)"><br> 
+<img id=9 class="thumbnail" src="image/Trix Rabitt.png" width=140 onclick="SelectImg(9)"><img id=10 class="thumbnail" src="image/Sonny the  Cuckoo.jpg" width=140 onclick="SelectImg(10)"> <img id=11 class="thumbnail" src="image/Boo Berry.jpg" width=140 onclick="SelectImg(11)"> <img id=12 class="thumbnail" src="image/Count Chocula.jpg" width=140 onclick="SelectImg(12)"><br>
+<img id=13 class="thumbnail" src="image/Franken Berry.jpg" width=140 onclick="SelectImg(13)"> <img id=14 class="thumbnail" src="image/Twinkie the Kid.jpg" width=140 onclick="SelectImg(14)"><img id=15 class="thumbnail" src="image/King Ding Dong.jpg" width=140 onclick="SelectImg(15)"> <img id=16 class="thumbnail" src="image/Fruit Pie the Magician.jpg" width=140 onclick="SelectImg(16)"><br> 
+<img id=17 class="thumbnail" src="image/Sugar Bear.png" width=140 onclick="SelectImg(17)"><img id=18 class="thumbnail" src="image/Colonel Sanders.jpg" width=140 onclick="SelectImg(18)"> <img id=19 class="thumbnail" src="image/Yummy Mummy.jpg" width=140 onclick="SelectImg(19)"> <img id=20 class="thumbnail" src="image/The Noid.jpg" width=140 onclick="SelectImg(20)"><br>
+<img id=21 class="thumbnail" src="image/Bazooka Joe.jpg" width=140 onclick="SelectImg(21)"> <img id=22 class="thumbnail" src="image/Jollibee.png" width=140 onclick="SelectImg(22)"><img id=23 class="thumbnail" src="image/Snap! Crackle! Pop!.jpg" width=140 onclick="SelectImg(23)"> <img id=24 class="thumbnail" src="image/Geoffrey.jpg" width=140 onclick="SelectImg(24)"><br> 
+<img id=25 class="thumbnail" src="image/Pillsbury Doughboy (Shamrock  Cookie).jpg" width=140 onclick="SelectImg(25)"><img id=26 class="thumbnail" src="image/Fruit Brute.jpg" width=140 onclick="SelectImg(26)"> <img id=27 class="thumbnail" src="image/Jean LaFoote.jpg" width=140 onclick="SelectImg(27)"> <img id=28 class="thumbnail" src="image/Big Boy.jpg" width=140 onclick="SelectImg(28)"><br>
+</td>
+<td width="10">
+</td>
+<td align="center" valign="top">
+<img id=0 src="">
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html><br>
